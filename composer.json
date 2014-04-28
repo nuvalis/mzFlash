@@ -1,8 +1,8 @@
 {
-    "name": "nuvalis/flash",    
+    "name": "nuvalis/mzFlash",    
     "type": "library",
-    "description": "Webtemplate to create websites",
-    "keywords": ["flash", "message", "anax", "education"],
+    "description": "Session based flash message class. Written for Anax-MVC part of the dbwebb course.",
+    "keywords": ["flash", "message", "anax", "anax-mvc", "education", "mzFlash"],
     "homepage": "http://dbwebb.se",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,6 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-
+        "php": ">=5.4"
     }
 }

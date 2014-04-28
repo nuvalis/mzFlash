@@ -1,7 +1,15 @@
 mzFlash
 =======
 
-PHP Flash Message class
+A PHP Flash Message Class
+
+Installation Instructions for Anax-MVC
+======================================
 
 
-Work in Progress
+
+	$di->setShared('flash', function() {
+		$flash = new nuvalis\Flash\Message();
+		return $flash;
+	});
+
