@@ -35,7 +35,7 @@ You should now be able to use these functions like this.
 
 	<?= $this->flash->show(); ?>
 
-	// The Output will something like this
+	// The Output will look something like this
 
 	<section class="flash-messages">
 		<div class="inner">
