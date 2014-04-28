@@ -35,3 +35,14 @@ You should now be able to use these functions like this.
 
 	<?= $this->flash->show(); ?>
 
+	// The Output will something like this
+
+	<section class="flash-messages">
+		<div class="inner">
+			<div class="flash error">Your Message</div>
+			<div class="flash success">Your Message</div>
+			<div class="flash warning">Your Message</div>
+			<div class="flash message">Your Message</div>
+		</div>
+	</section>
+
