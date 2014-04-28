@@ -17,7 +17,7 @@
         "php": ">=5.4"
     },
     "autoload": {
-        "psr-4": { "nuvalis\\": "/" }
+        "psr-4": { "nuvalis\\": "src/" }
     }
 
 }
