@@ -1,5 +1,5 @@
 {
-    "name": "nuvalis/mzFlash",    
+    "name": "nuvalis/mzflash",    
     "type": "library",
     "description": "Session based flash message class. Written for Anax-MVC part of the dbwebb course.",
     "keywords": ["flash", "message", "anax", "anax-mvc", "education", "mzFlash"],

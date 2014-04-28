@@ -6,7 +6,7 @@ A PHP Flash Message Class
 Installation Instructions for Anax-MVC
 ======================================
 
-Register it as an Anax Service like this in your config/frontcontroller whatever method you prefer.
+Register it as an Anax Service like this in your config/frontcontroller or whatever method you prefer.
 
 	$di = new \Anax\DI\CDIFactoryDefault();
 
