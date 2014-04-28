@@ -8,7 +8,8 @@ class Message
     
     function __construct()
     {
-   
+        
+        // Setting up flash array in session
         if(!isset($_SESSION['flash'])) 
         {
             $_SESSION['flash'] = array();
@@ -16,27 +17,52 @@ class Message
         }
 
     }
-    
+
+    /**
+     * Error Message
+     *
+     * @param Message string
+     **/
     public function error($message)
     {
-    	$_SESSION['flash']['messages']['error'][] = $message;
+        $_SESSION['flash']['messages']['error'][] = $message;
     }
 
+    /**
+     * Warning Message
+     *
+     * @param Message string
+     **/
     public function warning($message)
     {
-    	$_SESSION['flash']['messages']['warning'][] = $message;
+        $_SESSION['flash']['messages']['warning'][] = $message;
     }
 
+    /**
+     * Success Message
+     *
+     * @param Message string
+     **/
     public function success($message)
     {
-    	$_SESSION['flash']['messages']['success'][] = $message;
+        $_SESSION['flash']['messages']['success'][] = $message;
     }
 
+    /**
+     * Extra Message Type
+     *
+     * @param Message string
+     **/
     public function message($message)
     {
-    	$_SESSION['flash']['messages']['message'][] = $message;
+        $_SESSION['flash']['messages']['message'][] = $message;
     }
     
+    /**
+     * Clears flash array
+     *
+     * @return void
+     **/
     public function cleanUp() 
     {
         
@@ -44,6 +70,11 @@ class Message
         
     }
 
+    /**
+     * Renders messages as HTML for output later on.
+     *
+     * @return string of HTML or false
+     **/
     public function show() 
     {
             
@@ -83,7 +114,7 @@ class Message
 
             }
 
-           	if(isset($_SESSION['flash']['messages']["message"])){
+            if(isset($_SESSION['flash']['messages']["message"])){
 
                 foreach($_SESSION['flash']['messages']["message"] as $type => $msg)
                 {
