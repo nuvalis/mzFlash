@@ -1,0 +1,20 @@
+{
+    "name": "nuvalis/flash",    
+    "type": "library",
+    "description": "Webtemplate to create websites",
+    "keywords": ["flash", "message", "anax", "education"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emil Nordqvist",
+            "email": "emil@nordq.se",
+            "homepage": "http://nordq.se",
+            "role": "Developer, Student"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+
+    }
+}
