@@ -13,7 +13,7 @@ Register it as an Anax Service like this in your config/frontcontroller or whate
 	// Other Services
 
 	$di->setShared('flash', function() {
-		$flash = new nuvalis\Flash\Message();
+		$flash = new \nuvalis\Flash\Message();
 		return $flash;
 	});
 
@@ -22,4 +22,16 @@ Register it as an Anax Service like this in your config/frontcontroller or whate
 	$app = new \Anax\Kernel\CAnax($di);
 
 	$app->session //Start Session for mzFlash to work.
+
+
+You should now be able to use these functions like this.
+
+	$app->flash->error("Your Message");
+	$app->flash->success("Your Message");
+	$app->flash->warning("Your Message");
+	$app->flash->message("Your Message");
+
+	//To print it out you can use it like this in your theme/mytheme/index.tpl.php
+
+	<?= $this->flash->show(); ?>
 

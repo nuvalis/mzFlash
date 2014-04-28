@@ -1,6 +1,6 @@
 <?php
 
-namespace nuvalis\mzFlash;
+namespace nuvalis\Flash;
 
 class Message 
 {
