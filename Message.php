@@ -1,6 +1,6 @@
 <?php
 
-namespace nuvalis\Flash;
+namespace nuvalis\mzFlash;
 
 class Message 
 {
@@ -19,7 +19,7 @@ class Message
     }
 
     /**
-     * Error Message
+     * Set Error Message
      *
      * @param Message string
      **/
@@ -29,7 +29,7 @@ class Message
     }
 
     /**
-     * Warning Message
+     * Set Warning Message
      *
      * @param Message string
      **/
@@ -39,7 +39,7 @@ class Message
     }
 
     /**
-     * Success Message
+     * Set Success Message
      *
      * @param Message string
      **/
@@ -49,7 +49,7 @@ class Message
     }
 
     /**
-     * Extra Message Type
+     * Set Extra Message Type
      *
      * @param Message string
      **/
