@@ -26,12 +26,21 @@ Register it as an Anax Service like this in your config/frontcontroller or whate
 
 You should now be able to use these functions like this.
 
+	// In the Frontcontroller you can do it like this.
+
 	$app->flash->error("Your Message");
 	$app->flash->success("Your Message");
 	$app->flash->warning("Your Message");
 	$app->flash->message("Your Message");
+	
+	// If you are in a Controller or Model (Notice the diffrence $app/$this)
+	
+	$this->flash->error("Your Message");
+	$this->flash->success("Your Message");
+	$this->flash->warning("Your Message");
+	$this->flash->message("Your Message");
 
-	//To print it out you can use it like this in your theme/mytheme/index.tpl.php
+	//To print it out you can use it like this in your Anax-MVC/theme/mytheme/index.tpl.php
 
 	<?= $this->flash->show(); ?>
 
