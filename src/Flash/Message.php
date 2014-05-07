@@ -13,7 +13,7 @@ class Message
         if(!isset($_SESSION['flash'])) 
         {
             $_SESSION['flash'] = array();
-            $_SESSION['flash']['uri'] = $_SERVER['REQUEST_URI'];
+            // $_SESSION['flash']['uri'] = $_SERVER['REQUEST_URI'];
         }
 
     }
