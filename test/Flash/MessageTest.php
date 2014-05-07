@@ -95,7 +95,9 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $matcher = [
             "tag" => "section",
             'attributes' => array('class' => 'flash-messages'),
-            'child' => array('tag' => 'div', 'class' => 'inner')
+            'child' =>  ['tag' => 'div', 'class' => 'inner', 
+                            'child' => array('tag' => 'div', 'class' => 'flash')
+                        ],
         ];
 
         $render = $this->flash->show();
@@ -105,9 +107,9 @@ class MessageTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Renders messages as HTML for output later on.
+     * Testing if Show() returns false if no messages are in array
      *
-     * @return string of HTML or false
+     *
      **/
     public function testShowEmptyMessages() 
     {
