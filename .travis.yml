@@ -2,7 +2,6 @@ language: php
 php:
   - 5.5
   - 5.4
-  
-  script: 
-    - mkdir -p build/logs
-    - phpunit test/Flash/MessageTest.php --coverage-clover build/logs/clover.xml test
+script: 
+  - mkdir -p build/logs
+  - phpunit test/Flash/MessageTest.php --coverage-clover build/logs/clover.xml test
