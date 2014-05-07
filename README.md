@@ -1,5 +1,6 @@
 mzFlash
 =======
+[![Build Status](https://travis-ci.org/nuvalis/mzFlash.svg?branch=master)](https://travis-ci.org/nuvalis/mzFlash)
 
 A PHP Flash Message Class
 
