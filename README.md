@@ -43,7 +43,7 @@ You should now be able to use these functions like this.
 
 	//To print it out you can use it like this in your Anax-MVC/theme/mytheme/index.tpl.php
 
-	<?= $this->flash->show(); ?>
+	<?= $this->mzflash->show(); ?>
 
 	// The Output will look something like this
 
