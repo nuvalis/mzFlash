@@ -13,9 +13,9 @@ Register it as an Anax Service like this in your config/frontcontroller or whate
 
 	// Other Services
 
-	$di->setShared('flash', function() {
-		$flash = new \nuvalis\Flash\Message();
-		return $flash;
+	$di->setShared('mzflash', function() {
+		$mzflash = new \nuvalis\Flash\Message();
+		return $mzflash;
 	});
 
 	// Other Services, Controllers etc.
@@ -29,17 +29,17 @@ You should now be able to use these functions like this.
 
 	// In the Frontcontroller you can do it like this.
 
-	$app->flash->error("Your Message");
-	$app->flash->success("Your Message");
-	$app->flash->warning("Your Message");
-	$app->flash->message("Your Message");
+	$app->mzflash->error("Your Message");
+	$app->mzflash->success("Your Message");
+	$app->mzflash->warning("Your Message");
+	$app->mzflash->message("Your Message");
 	
 	// If you are in a Controller or Model (Notice the diffrence $app/$this)
 	
-	$this->flash->error("Your Message");
-	$this->flash->success("Your Message");
-	$this->flash->warning("Your Message");
-	$this->flash->message("Your Message");
+	$this->mzflash->error("Your Message");
+	$this->mzflash->success("Your Message");
+	$this->mzflash->warning("Your Message");
+	$this->mzflash->message("Your Message");
 
 	//To print it out you can use it like this in your Anax-MVC/theme/mytheme/index.tpl.php
 
@@ -56,3 +56,7 @@ You should now be able to use these functions like this.
 		</div>
 	</section>
 
+Update
+=================
+[14 May, 2014]
+Changed variable from flash to mzflash to avoid collision with Anax-MVC's new flash class/service. You can name this service to anything you want.
